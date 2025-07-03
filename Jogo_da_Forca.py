@@ -40,3 +40,13 @@ def game():
         else:
             chances -= 1
             letras_erradas.append(tentativa)
+
+        if '_' not in letras_descobertas:
+            print('\nVocê ganhou, a paralvra era: ', palavra)
+            break
+    if '_' in letras_descobertas:
+        print('\nVocê perdeu, a palavra era: ', palavra)
+
+if __name__ == '__main__':
+    game()
+    print('\nParabens. voce esta aprendendo programação em python com a DSA. :)\n')
